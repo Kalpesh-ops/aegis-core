@@ -62,3 +62,9 @@ temp/
 # Generated deployment artifacts
 .vercel/
 frontend/.vercel/
+
+# Firebase
+.firebase/
+
+# Cache and lock files
+*.cache
