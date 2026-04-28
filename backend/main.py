@@ -7,6 +7,14 @@ import time
 import os
 import json
 
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    load_dotenv = None
+
+if load_dotenv is not None:
+    load_dotenv()
+
 app = FastAPI(title="Aegis AI Engine")
 
 app.add_middleware(
